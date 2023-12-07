@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { useState } from 'react';
-import { useCountdown } from './Countdown';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import RedoIcon from '@mui/icons-material/Redo';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 // import RestoreIcon from '@mui/icons-material/Restore';
 // import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -25,7 +26,7 @@ export default function Results(props) {
                 </Typography>
             </Stack>
             <BottomNavigation
-            sx={{ position: 'fixed', bottom: 30, left: 0, right: 0 }}
+            sx={{ position: 'fixed', bottom: 30, left: 0, right: 0, backgroundColor: "rgb(247, 225, 241)" }}
             className="nav"
             showLabels
             value={value}
@@ -42,9 +43,9 @@ export default function Results(props) {
             >
             {/* <BottomNavigationAction label="Generate Again" icon={<RestoreIcon />} />
             <BottomNavigationAction label="Go Back" icon={<FavoriteIcon />} /> */}
-            <BottomNavigationAction label="Generate Again" icon={"icon"} />
-            <BottomNavigationAction label="Go Back" icon={"icon"} />
-            <BottomNavigationAction label="Reset" icon={"icon"} />
+            <BottomNavigationAction label="Generate Again" icon={<RedoIcon />} />
+            <BottomNavigationAction label="Go Back" icon={<ExitToAppIcon />} />
+            <BottomNavigationAction label="Reset" icon={<RestartAltIcon />} />
             </BottomNavigation>
         </Box>
     );

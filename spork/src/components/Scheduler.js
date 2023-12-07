@@ -6,15 +6,6 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import CountdownTimer from './CountdownTimer';
 import Results from './Results';
-import ConfettiExplosion from 'react-confetti-explosion';
-
-const largeProps: ConfettiProps = {
-    force: 0.8,
-    duration: 3000,
-    particleCount: 300,
-    width: 1600,
-    colors: ['#041E43', '#1471BF', '#5BB4DC', '#FC027B', '#66D805'],
-  };
 
 export default function Scheduler(props) {
     const time = useCountdown(props.targetDate);
@@ -55,7 +46,7 @@ export default function Scheduler(props) {
         return (
             <Box sx={{alignItems:"center"}}>
                 <CountdownTimer time={[0, 0, 0, 0]}/>
-                <Button variant="contained" onClick={() => generateOnPress()}>
+                <Button variant="contained" onClick={() => generateOnPress()} sx={{ backgroundColor: "rgb(224 118 195)"}}>
                     Generate Spork Day and Theme
                 </Button>
             </Box>

@@ -35,10 +35,11 @@ function getUpcomingDate(bufferWindow) {
 }
 
 function App() {
-  const [date, setDate] = useState(getUpcomingDate(1));
+  const [date, setDate] = useState(getUpcomingDate(defaultBuffer));
 
   return (
     <div className="App">
+      
       <Scheduler 
         targetDate={date} 
         themes={data.themes} 
