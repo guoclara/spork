@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spork/static/css/main.d6b03d14.css",
+    "main.js": "/spork/static/js/main.c33c9c50.js",
+    "static/js/787.dbf472b8.chunk.js": "/spork/static/js/787.dbf472b8.chunk.js",
+    "index.html": "/spork/index.html",
+    "main.d6b03d14.css.map": "/spork/static/css/main.d6b03d14.css.map",
+    "main.c33c9c50.js.map": "/spork/static/js/main.c33c9c50.js.map",
+    "787.dbf472b8.chunk.js.map": "/spork/static/js/787.dbf472b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6b03d14.css",
+    "static/js/main.c33c9c50.js"
+  ]
+}
